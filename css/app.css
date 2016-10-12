@@ -1,0 +1,21 @@
+.top-bar{
+    height: 2.5em;
+}
+
+.slide-bar{
+    width:11em;
+    position:fixed;
+    top: 2.5em;
+    background-color:#e6e6e6;
+}
+
+.slide-bar ul li{
+    list-style: none;
+}
+
+#wrapper{
+    position:absolute;
+    left:11em;
+    width:calc(100vw - 11em);
+}
+
