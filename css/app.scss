@@ -1,0 +1,52 @@
+$sidebard-width: 11em;
+$top-bar-height: 2.6em;
+$navigator-menu-z-index: 100;
+
+body {
+  color: green;
+}
+
+.top-bar {
+  position: fixed;
+  width: 100%;
+  height: $top-bar-height;
+  z-index: $navigator-menu-z-index;
+}
+
+.slide-bar {
+  width: $sidebard-width;
+  height: calc(100vh);
+  background-color: #e6e6e6;
+  position: fixed;
+  top: $top-bar-height;
+  z-index: $navigator-menu-z-index;
+
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+#wrapper {
+  position: relative;
+  left: $sidebard-width;
+  top: $top-bar-height;
+  width: calc(100vw - #{$sidebard-width});
+  margin-left: auto;
+}
+
+.mod-header {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+/**************Login page******************/
+#login {
+  width: 50em;
+}
+
+/*************End Login Page*****************************/
