@@ -26246,7 +26246,16 @@ var Dashboard = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                null,
+                { className: "dashboard" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "columns large-3" },
+                        _react2.default.createElement("img", { src: "/react-demo/images/logo.png" })
+                    )
+                ),
                 _react2.default.createElement(
                     "div",
                     { className: "row" },
@@ -26254,9 +26263,62 @@ var Dashboard = function (_React$Component) {
                         "div",
                         { className: "columns large-12" },
                         _react2.default.createElement(
-                            "div",
+                            "nav",
                             null,
-                            "Dashboard"
+                            _react2.default.createElement(
+                                "ul",
+                                null,
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Home"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Download"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Store"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Forums"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Blog"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Demos"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Documentation"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "About"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Hosting"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Consulting"
+                                )
+                            )
                         )
                     )
                 )

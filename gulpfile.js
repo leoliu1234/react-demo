@@ -23,7 +23,7 @@ gulp.task('connect', function () {
   });
 });
 
-gulp.task('watch', ['builder'], function () {
+gulp.task('watch', function () {
     gulp.watch('./**/*.jsx', ['builder']);
 });
 
