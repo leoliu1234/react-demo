@@ -1,9 +1,11 @@
 $sidebard-width: 11em;
 $top-bar-height: 2.6em;
 $navigator-menu-z-index: 100;
+$common-padding: 1em;
 
 body {
   color: green;
+  font-family: cursive;
 }
 
 .top-bar {
@@ -50,22 +52,51 @@ body {
   margin-right: auto;
 }
 
+.content {
+  padding: 1em;
+}
+
 /*************End Login Page*****************************/
 
 /*********************dashboard*******************/
 .dashboard {
   nav {
-    margin-top: .8em;
+    margin-top: 2em;
 
     ul {
       li {
         list-style: none;
         display: inline;
-        padding: 1.5em;
-        font-family: cursive;
-        font-size: 1.2em;
+        padding: 1em .5em;
+        font-size: 2em;
+
+        a {
+          color: #649407;
+
+          &:hover {
+            color: #1f689c;
+            background-color: #f2f2f2;
+          }
+        }
       }
     }
+  }
+}
+
+.panel {
+  background-color: #f2f2f2;
+
+  header {
+    font-size: 1.4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+  }
+
+  .mod-body {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 2em;
   }
 }
 /**********************end dashboard****************/

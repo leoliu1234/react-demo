@@ -1,5 +1,6 @@
 body {
-  color: green; }
+  color: green;
+  font-family: cursive; }
 
 .top-bar {
   position: fixed;
@@ -35,16 +36,35 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.content {
+  padding: 1em; }
+
 /*************End Login Page*****************************/
 /*********************dashboard*******************/
 .dashboard nav {
-  margin-top: .8em; }
+  margin-top: 2em; }
   .dashboard nav ul li {
     list-style: none;
     display: inline;
-    padding: 1.5em;
-    font-family: cursive;
-    font-size: 1.2em; }
+    padding: 1em .5em;
+    font-size: 2em; }
+    .dashboard nav ul li a {
+      color: #649407; }
+      .dashboard nav ul li a:hover {
+        color: #1f689c;
+        background-color: #f2f2f2; }
+
+.panel {
+  background-color: #f2f2f2; }
+  .panel header {
+    font-size: 1.4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1.5em; }
+  .panel .mod-body {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 2em; }
 
 /**********************end dashboard****************/
 

@@ -78,7 +78,7 @@ _reactDom2.default.render(_react2.default.createElement(
     )
 ), document.getElementById("main"));
 
-},{"./src/dashboard":236,"./src/slide-bar":237,"./src/top-bar":238,"./src/user-login":239,"react":233,"react-dom":52,"react-router":82}],2:[function(require,module,exports){
+},{"./src/dashboard":236,"./src/slide-bar":238,"./src/top-bar":239,"./src/user-login":240,"react":233,"react-dom":52,"react-router":82}],2:[function(require,module,exports){
 var pSlice = Array.prototype.slice;
 var objectKeys = require('./lib/keys.js');
 var isArguments = require('./lib/is_arguments.js');
@@ -26212,6 +26212,127 @@ module.exports = function (str) {
 },{}],235:[function(require,module,exports){
 arguments[4][46][0].apply(exports,arguments)
 },{"_process":50,"dup":46}],236:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _dbMenuBar = require('./db-menu-bar');
+
+var _dbMenuBar2 = _interopRequireDefault(_dbMenuBar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Dashboard = function (_React$Component) {
+    _inherits(Dashboard, _React$Component);
+
+    function Dashboard() {
+        _classCallCheck(this, Dashboard);
+
+        return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).apply(this, arguments));
+    }
+
+    _createClass(Dashboard, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'dashboard' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'columns large-3' },
+                        _react2.default.createElement('img', { src: '/react-demo/images/logo.png' })
+                    )
+                ),
+                _react2.default.createElement(_dbMenuBar2.default, null),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row content' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'columns large-12' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'panel' },
+                            _react2.default.createElement(
+                                'header',
+                                null,
+                                'Good Idea?'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'mod-body' },
+                                'mojoPortal is free open source web content management software for running your website. Very user friendy,no knowledge of HTML required to create and edit content. Easily create accessible, standards compliant, mobile friendly web pages & content right from your web browser. Easy web design with Artisteer or CSS. Free community support & paid professional support available.'
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row content' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'columns large-6' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'panel' },
+                            _react2.default.createElement(
+                                'header',
+                                null,
+                                'Left Here?'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'mod-body' },
+                                'mojoPortal is free open source web content management software for running your website. Very user friendy,no knowledge of HTML required to create and edit content. Easily create accessible, standards compliant, mobile friendly web pages & content right from your web browser. Easy web design with Artisteer or CSS. Free community support & paid professional support available.'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'columns large-6' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'panel' },
+                            _react2.default.createElement(
+                                'header',
+                                null,
+                                'Right Here?'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'mod-body' },
+                                'mojoPortal is free open source web content management software for running your website. Very user friendy,no knowledge of HTML required to create and edit content. Easily create accessible, standards compliant, mobile friendly web pages & content right from your web browser. Easy web design with Artisteer or CSS. Free community support & paid professional support available.'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Dashboard;
+}(_react2.default.Component);
+
+exports.default = Dashboard;
+
+},{"./db-menu-bar":237,"react":233}],237:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26232,89 +26353,89 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Dashboard = function (_React$Component) {
-    _inherits(Dashboard, _React$Component);
+var DashboardMenuBar = function (_React$Component) {
+    _inherits(DashboardMenuBar, _React$Component);
 
-    function Dashboard() {
-        _classCallCheck(this, Dashboard);
+    function DashboardMenuBar() {
+        _classCallCheck(this, DashboardMenuBar);
 
-        return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (DashboardMenuBar.__proto__ || Object.getPrototypeOf(DashboardMenuBar)).apply(this, arguments));
     }
 
-    _createClass(Dashboard, [{
+    _createClass(DashboardMenuBar, [{
         key: "render",
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                { className: "dashboard" },
+                { className: "row" },
                 _react2.default.createElement(
                     "div",
-                    { className: "row" },
+                    { className: "columns large-12" },
                     _react2.default.createElement(
-                        "div",
-                        { className: "columns large-3" },
-                        _react2.default.createElement("img", { src: "/react-demo/images/logo.png" })
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "row" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "columns large-12" },
+                        "nav",
+                        null,
                         _react2.default.createElement(
-                            "nav",
+                            "ul",
                             null,
                             _react2.default.createElement(
-                                "ul",
+                                "li",
                                 null,
                                 _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Home"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Download"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Store"
-                                ),
-                                _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Forums"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Blog"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Demos"
-                                ),
-                                _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Documentation"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "About"
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
                                 _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Hosting"
-                                ),
-                                _react2.default.createElement(
-                                    "li",
+                                    "a",
                                     null,
                                     "Consulting"
                                 )
@@ -26326,12 +26447,12 @@ var Dashboard = function (_React$Component) {
         }
     }]);
 
-    return Dashboard;
+    return DashboardMenuBar;
 }(_react2.default.Component);
 
-exports.default = Dashboard;
+exports.default = DashboardMenuBar;
 
-},{"react":233}],237:[function(require,module,exports){
+},{"react":233}],238:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26400,7 +26521,7 @@ var SlideBar = function (_React$Component) {
 
 exports.default = SlideBar;
 
-},{"react":233,"react-router":82}],238:[function(require,module,exports){
+},{"react":233,"react-router":82}],239:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26474,7 +26595,7 @@ var TopBar = function (_React$Component) {
 
 exports.default = TopBar;
 
-},{"react":233,"react-router":82}],239:[function(require,module,exports){
+},{"react":233,"react-router":82}],240:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

@@ -27,4 +27,4 @@ gulp.task('watch', function () {
     gulp.watch('./**/*.jsx', ['builder']);
 });
 
-gulp.task('build', ['builder']);
+gulp.task('build', ['watch']);
