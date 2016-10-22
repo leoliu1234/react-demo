@@ -78,7 +78,7 @@ _reactDom2.default.render(_react2.default.createElement(
     )
 ), document.getElementById("main"));
 
-},{"./src/dashboard":236,"./src/slide-bar":238,"./src/top-bar":239,"./src/user-login":240,"react":233,"react-dom":52,"react-router":82}],2:[function(require,module,exports){
+},{"./src/dashboard":236,"./src/slide-bar":239,"./src/top-bar":240,"./src/user-login":241,"react":233,"react-dom":52,"react-router":82}],2:[function(require,module,exports){
 var pSlice = Array.prototype.slice;
 var objectKeys = require('./lib/keys.js');
 var isArguments = require('./lib/is_arguments.js');
@@ -1287,8 +1287,7 @@ function is(x, y) {
   if (x === y) {
     // Steps 1-5, 7-10
     // Steps 6.b-6.e: +0 != -0
-    // Added the nonzero y check to make Flow happy, but it is redundant
-    return x !== 0 || y !== 0 || 1 / x === 1 / y;
+    return x !== 0 || 1 / x === 1 / y;
   } else {
     // Step 6.a: NaN == NaN
     return x !== x && y !== y;
@@ -26228,6 +26227,10 @@ var _dbMenuBar = require('./db-menu-bar');
 
 var _dbMenuBar2 = _interopRequireDefault(_dbMenuBar);
 
+var _dbImageList = require('./db-image-list');
+
+var _dbImageList2 = _interopRequireDefault(_dbImageList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26322,7 +26325,8 @@ var Dashboard = function (_React$Component) {
                             )
                         )
                     )
-                )
+                ),
+                _react2.default.createElement(_dbImageList2.default, null)
             );
         }
     }]);
@@ -26332,7 +26336,94 @@ var Dashboard = function (_React$Component) {
 
 exports.default = Dashboard;
 
-},{"./db-menu-bar":237,"react":233}],237:[function(require,module,exports){
+},{"./db-image-list":237,"./db-menu-bar":238,"react":233}],237:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DashboardImageList = function (_React$Component) {
+    _inherits(DashboardImageList, _React$Component);
+
+    function DashboardImageList() {
+        _classCallCheck(this, DashboardImageList);
+
+        return _possibleConstructorReturn(this, (DashboardImageList.__proto__ || Object.getPrototypeOf(DashboardImageList)).apply(this, arguments));
+    }
+
+    _createClass(DashboardImageList, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "row" },
+                _react2.default.createElement("div", { className: "columns large-12" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image1.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image2.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image3.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image4.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image5.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image6.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image7.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image8.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image9.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image10.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image11.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image12.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image13.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image14.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image15.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image16.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image17.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image18.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image19.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image20.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image21.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image22.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image23.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image24.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image25.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image26.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image27.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image28.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image29.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image30.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image31.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image32.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image33.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image34.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image35.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image36.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image37.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image38.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image39.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/image40.jpg" }),
+                _react2.default.createElement("img", { src: "/react-demo/images/logo.png" })
+            );
+        }
+    }]);
+
+    return DashboardImageList;
+}(_react2.default.Component);
+
+exports.default = DashboardImageList;
+
+},{"react":233}],238:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26452,7 +26543,7 @@ var DashboardMenuBar = function (_React$Component) {
 
 exports.default = DashboardMenuBar;
 
-},{"react":233}],238:[function(require,module,exports){
+},{"react":233}],239:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26521,7 +26612,7 @@ var SlideBar = function (_React$Component) {
 
 exports.default = SlideBar;
 
-},{"react":233,"react-router":82}],239:[function(require,module,exports){
+},{"react":233,"react-router":82}],240:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26595,7 +26686,7 @@ var TopBar = function (_React$Component) {
 
 exports.default = TopBar;
 
-},{"react":233,"react-router":82}],240:[function(require,module,exports){
+},{"react":233,"react-router":82}],241:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
